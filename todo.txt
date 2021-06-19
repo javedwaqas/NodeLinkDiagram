@@ -1,0 +1,45 @@
+-----------------------------------------------------------------------
+TODO FILE
+Aggregated node-link diagram project
+Niklas Elmqvist
+-----------------------------------------------------------------------
+
+Computational:
+[ ] Store (light-weight) aggregation hierarchy to allow for quick rebuilding
+[X] Freeze/thaw for aggregate graph updates
+[X] Provide support for performing a single step of aggregation
+[X] Store aggregation hierarchy and/or pairwise node distances
+[X] Midpoint distance function
+[X] Separate distance function from aggregation algorithm
+[X] Hierarchical/agglomerative aggregation for nodes
+
+Visual representation:
+[ ] Edge bundling to cope with aggregated nodes
+[ ] Calculate overlap in image (check for intersection of Java shapes in scene graph)
+[ ] Calculate density in image (number of items per screen pixel units)
+[ ] Implement additional graph layout algorithms that fit our study better
+[ ] Translucency in hull (make it more subtle)
+[X] Edges working with the aggregated nodes
+[X] Convex hull representations of aggregated nodes
+
+Architectural:
+[ ] Incremental updates of the aggregated node link canvas
+[ ] User study platform interface
+[X] Java WebStart version 
+[X] Visual representation listens to the aggregate graph 
+[X] Create separate balanced and unbalanced aggregate graph structures 
+[X] Aggregated graph data structure
+
+Interaction:
+[ ] Highlight nodes and connected edges (and nodes?) on mouse over
+[X] Allow for numeric keys to control percentages of total number of nodes visible
+[X] Lasso selection for merging
+[X] Roll-up/Drill-down using mouse wheel (next node to merge/split)
+[X] Roll-up/Drill-down interaction with the aggregated nodes (click to roll/drill)
+
+Bugs:
+[ ] Multiple self-edges when splitting merged nodes
+[X] Incorrect edges when manually aggregating (due to aggregation not updating supernode neighbors)
+[X] Concurrent modification problem when changing aggregation (thread-safety, use properties for updates)
+[X] Manage unbalanced split/merge in the aggregated graph 
+[X] Some edges remain after fully aggregating the graph for the insitu GraphML file

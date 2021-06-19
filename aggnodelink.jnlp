@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp
+   spec="1.0+" 
+   codebase="https://engineering.purdue.edu/~elm/projects/effvsacc/"
+   href="aggnodelink.jnlp">
+  <information>
+    <title>AggNodeLink WebStart</title>
+    <vendor>Purdue University</vendor>
+    <homepage href="aggnodelink.html"/>
+    <description>AggTreemap Application</description> 
+    <description kind="short">AggTreemap Visualization Application</description>
+    <offline-allowed/>
+  </information>
+  <security>
+      <all-permissions/>
+  </security>
+  <resources>
+    <j2se version="1.5+" max-heap-size="150M"/>
+    <jar href="aggnodelink.jar"/>
+    <jar href="pivotlib.jar"/>
+    <jar href="piccolo.jar"/>
+  </resources>
+  <application-desc main-class="edu.purdue.nodelink.application.AggNodeLinkApplication"/>
+</jnlp>
